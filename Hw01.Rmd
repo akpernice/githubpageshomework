@@ -1,0 +1,52 @@
+---
+title: "Homework 1- Exercise 2"
+author: "Ashlyn Pernice"
+date: "1/23/2020"
+output: html_document
+---
+# Mtcars Dataset Exploration 
+
+*This is exercise 2 of homework 1 for Data Science & Programming. In this R markdown file, I will be briefly exploring the mtcars dataset.* 
+
+*Here is a look at the structure of the dataset.* 
+```{r structure of the data}
+str(mtcars)
+
+
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+*Here are the types of cars included in the dataset.*
+```{r}
+row.names(mtcars)
+
+```
+
+*Below is a quick summary for the mtcars dataset.*
+
+```{r}
+
+summary(mtcars) 
+
+
+```
+
+*Now let's look at some important information for the dataset.*
+
+
+*Here are the cars with over 26 miles per gallon. This can help us distinguish the most fuel efficient vehicles* 
+
+```{r}
+
+mtcars[mtcars$mpg > 26,] 
+
+
+
+```
+
+
