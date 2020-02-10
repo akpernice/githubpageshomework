@@ -6,7 +6,8 @@ output: html_document
 ---
 # Mtcars Dataset Exploration 
 
-*This is exercise 2 of homework 1 for Data Science & Programming. In this R markdown file, I will be briefly exploring the mtcars dataset.* 
+*This is exercise 2 of homework 1 for Data Science & Programming. In this R markdown file, I will be briefly exploring the mtcars dataset. This dataset has 11 variables for each type of car: miles per gallon, number of cylinders, displacement, gross horsepower, rear axle ratio, weight, 1/4 mile time, V/S, transmission type, number of forward gears, and number of carburetors. * 
+
 
 *Here is a look at the structure of the dataset.* 
 ```{r structure of the data}
