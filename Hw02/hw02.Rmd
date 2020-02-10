@@ -1,0 +1,24 @@
+---
+title: "hw02"
+author: "Ashlyn Pernice"
+date: "2/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(gapminder)
+library(dplyr)
+library(tidyverse)
+gapminder
+```
+
+```{r}
+gapminder %>% 
+   filter(year == 1970, 1971, 1972, 1973, country %in% c("France" , "Spain", "Italy")) 
+
+
+```
