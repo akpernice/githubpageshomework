@@ -1,0 +1,30 @@
+---
+title: "hw02exercise2"
+author: "Ashlyn Pernice"
+date: "2/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I chose the 'chickwts' dataset to explore. The two varialbes I am exploring are the chicken's weight, and type of feed. 
+```{r exercise 2}
+summary(chickwts)
+```
+
+Below is a scatterplot of chicken weight by type of feed. As you can see, the heaviest chickens feed on sunflowers, casein, and meatmeal. 
+
+```{r}
+chickwts
+  ggplot(chickwts, (aes(weight, feed))) +
+  geom_point(alpha = 0.3) +
+  theme_bw()
+```
+Below is a distribution of chicken weights. It is pretty much a normal distribution. 
+```{r}
+ggplot(chickwts, aes(weight)) +
+  geom_density()
+
+```
